@@ -1,0 +1,38 @@
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets">
+
+		<body>
+			<div class="container">
+				<h1>Tableau</h1>
+				<h:dataTable headerClass="header" styleClass="table table-striped"
+					value="#{personneManagedBean.personnes}" var="personne">
+					<h:column>
+						<f:facet name="header">Nom</f:facet>#{personne.name}
+			</h:column>
+					<h:column>
+						<f:facet name="header">prenom</f:facet>#{personne.firstname}
+			</h:column>
+					<h:column>
+						<f:facet name="header">date de naissance</f:facet>#{personne.birthDate}
+			</h:column>
+
+					<h:column>
+						<f:facet name="header">Action</f:facet>
+
+						<h:form>
+							<h:commandLink action="#{personneManagedBean.update()}"
+								value="Update" />
+							<h:commandLink action="#{personneManagedBean.remove()}"
+								value="Delete" />
+						</h:form>
+					</h:column>
+					
+				</h:dataTable>
+				<h:form>			
+				<h:commandLink action="/personne/personne.jsf">Ajouter une personne</h:commandLink>
+				</h:form> 
+			</div>
+		</body>
+</html> 

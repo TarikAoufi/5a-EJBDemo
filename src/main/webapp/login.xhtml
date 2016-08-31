@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html">
+<h:head>
+	<title>Login page</title>
+</h:head>
+<h:body>
+	<h1>Login page</h1>
+	<h:form method="post" action="j_security_check">
+		Login<br />
+		<h:inputText id="j_username" label="Login" required="true" />
+		<br />Password<br />
+		<h:inputSecret id="j_password" label="password" required="true" />
+		<br />
+		<h:commandButton value="Valider" />
+	</h:form>
+</h:body>
+</html>
