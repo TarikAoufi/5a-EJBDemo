@@ -1,5 +1,5 @@
 # 5-EJBDemo
-Maven +  EJB3 + MDB (Message Driven Bean) + JMS + JPA + JSF + JAAS (Java Authentication and Authorisation Service) + JAX-WS + REST + CDI (Contexts and Dependency Injection for Java)-API + WildFly + MySQL 
+Maven +  EJB3 + MDB (Message Driven Bean) + JMS + JPA + JSF + JAX-WS + REST + CDI (Contexts and Dependency Injection for Java)-API + WildFly + MySQL 
   
  - Mettre en oeuvre la spécification JAAS (Java Authentication and Authorisation Service) pour sécuriser l’application.
  
